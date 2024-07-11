@@ -19,6 +19,10 @@
   display: block;
 }
 
+.vertical-timeline-element-icon {
+  border: 2px solid #757B83 !important;
+}
+
 .black-gradient {
   background: #000000; /* fallback for old browsers */
   background: -webkit-linear-gradient(
@@ -34,11 +38,11 @@
 }
 
 .violet-gradient {
-  background: #804dee;
-  background: linear-gradient(-90deg, #804dee 0%, rgba(60, 51, 80, 0) 100%);
+  background: #00cea8;
+  background: linear-gradient(-90deg, #00cea8 0%, rgba(60, 51, 80, 0) 100%);
   background: -webkit-linear-gradient(
     -90deg,
-    #804dee 0%,
+    #00cea8 0%,
     rgba(60, 51, 80, 0) 100%
   );
 }

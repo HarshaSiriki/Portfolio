@@ -9,9 +9,10 @@ import { experiences } from '../constants';
 import { SectionWrapper } from '../hoc';
 import { textVariant } from '../utils/motion';  
 
+
 const ExperienceCard = ({experience}) =>{
   return (<VerticalTimelineElement
-    contentStyle={{background: '#1d1836', color:'#fff'}}
+    contentStyle={{background: '#22252A', color:'#22252A', border:'1px solid #757B83', borderRadius: '20px' }}
     contentArrowStyle={{borderRight: '7px solid #232631'}}
     date={experience.date}
     iconStyle={{background: experience.iconBg}}
@@ -55,7 +56,7 @@ const Experience = () => {
       </motion.div>
 
       <div className='mt-20 flex flex-col'>
-        <VerticalTimeline>
+        <VerticalTimeline lineColor='#757B83'>
           {experiences.map((experience, index) => (
             <ExperienceCard key={index} experience={experience}/>
           ))}
