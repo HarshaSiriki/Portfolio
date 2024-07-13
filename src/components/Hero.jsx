@@ -1,7 +1,8 @@
-import React from 'react'
+import React, { useState } from 'react'
 import {motion} from 'framer-motion';
 import {styles} from '../styles';
 import { RobotCanvas } from './canvas';
+import Copyright from './Copyright';
 
 const Hero = () => {
   return (
@@ -24,6 +25,7 @@ const Hero = () => {
         </div>
       </div>
       <RobotCanvas/>
+      <Copyright name={'Animated ROBOT SDC'} company={'SDC PERFORMANCE™️'} nameLink={'https://skfb.ly/o68nv'}/>
       <div
         className='absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center'
       >

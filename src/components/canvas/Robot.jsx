@@ -5,6 +5,7 @@ import { OrbitControls, Preload, useAnimations, useGLTF } from "@react-three/dre
 import * as THREE from 'three';
 import { GLTFLoader } from "three/examples/jsm/Addons.js";
 
+
 const Robot = ({isMobile}) => {
     const {scene,animations} = useGLTF('./animated_robot_sdc/scene.gltf')
     const [mixer] = useState(() => new THREE.AnimationMixer(scene));
