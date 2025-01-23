@@ -34,14 +34,18 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: 18
-          #cache: "npm"
+          cache: "npm"
       - name: Install dependencies
         run: npm install
-      - name: Build the project
-        run: npm run build --verbose # Build the project with verbose output
-
-      - name: Deploy to GitHub Pages
-        uses: actions/deploy-pages@v2 # Use deploy-pages action instead of upload-artifact
+      - name: Build
+        run: npm run build
+      - name: Setup Pages
+        uses: actions/configure-pages@v3
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v2
         with:
-          # Specify the directory where the build is output (dist by default in Vite)
+          # Upload dist repository
           path: "./dist"
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v2
