@@ -41,7 +41,17 @@ jobs:
         run: npm run build
       - name: Setup Pages
         uses: actions/configure-pages@v3
-      - name: Upload artifact
+      - name: Upload build artifact
+        uses: actions/upload-artifact@v4 # Force use of v4
+        with:
+          name: pages-artifact
+          path: "./dist"
+      - name: Download build artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: pages-artifact
+          path: "./dist"
+      - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v1
         with:
           # Upload dist repository
