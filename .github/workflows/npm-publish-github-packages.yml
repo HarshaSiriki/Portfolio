@@ -37,9 +37,11 @@ jobs:
           #cache: "npm"
       - name: Install dependencies
         run: npm install
-      - name: Build
-        run: npm run build
+      - name: Build the project
+        run: npm run build --verbose # Build the project with verbose output
+
       - name: Deploy to GitHub Pages
-        run: npm run deploy
-        env:
-          CI: false
+        uses: actions/deploy-pages@v2 # Use deploy-pages action instead of upload-artifact
+        with:
+          # Specify the directory where the build is output (dist by default in Vite)
+          path: "./dist"
