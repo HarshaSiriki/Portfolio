@@ -108,7 +108,7 @@ const technologies = [
 
 const experiences = [
   {
-    title: "Front end developer",
+    title: "Project Engineer",
     company_name: "Wipro",
     icon: wipro,
     iconBg: "white",
@@ -117,7 +117,7 @@ const experiences = [
   },
   {
     title: "Front end developer",
-    company_name: "Wipro",
+    company_name: "Client: Wipro internal project",
     icon: wipro,
     iconBg: "white",
     date: "",
