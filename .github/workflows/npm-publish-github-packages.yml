@@ -21,22 +21,31 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
-  # Single deploy job no building
-  deploy:
-    environment:
-      name: github-pages
-      url: ${{steps.deployment.outputs.page_url}}
+  # Build job
+  build:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
         uses: actions/checkout@v4
       - name: Setup Pages
+        id: pages
         uses: actions/configure-pages@v5
-      - name: Upload Artifact
-        uses: actions/upload-pages-artifact@v3
+      - name: Build with Jekyll
+        uses: actions/jekyll-build-pages@v1
         with:
-          # upload entire directory
-          path: "./dist"
+          source: ./
+          destination: ./_site
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+
+  # Deployment job
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{steps.deployment.outputs.page_url}}
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
