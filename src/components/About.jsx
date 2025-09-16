@@ -53,7 +53,7 @@ const About = () => {
         variants={fadeIn("","",0.1,1)}
         className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'
       >
-        A highly skilled Software Engineer with over 3 years of experience in frontend development, API integration, and technical support. Profi cient in Python, React.js, with hands-on experience in cloud-based technologies, API testing, and performance optimization. Demonstrated expertise in troubleshooting complex issues, including VoIP protocols and Cisco CUCM, and building scalable solutions. Adept at collaborating in Agile environments, and experienced with CI/CD pipelines and cloud services. A proactive self-starter who leads projects, improves processes, and drives results while maintaining a strong focus on team collaboration and problem-solving.
+        A skilled Software Engineer with over 3 years of experience in API integration, technical support and python automation. Proficient in Python, React.js, JavaScript with hands-on experience in cloud-based technologies. Demonstrated expertise in troubleshooting complex issues, including VoIP protocols and Cisco CUCM, and building scalable solutions. Adept at collaborating in Agile environments, and experienced with CI/CD pipelines and cloud services. A proactive self-starter who leads projects, improves processes, and drives results while maintaining a strong focus on team collaboration and problem-solving.
       </motion.p>
 
       <div
