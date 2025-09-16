@@ -19,8 +19,8 @@ const Hero = () => {
             <span className='text-[#00cea8]'> Harsha</span>
           </h1>
           <p className={`${styles.heroSubText} mt-2 text-white-100`}>
-            I develop user interfaces <br className='sm:block hidden'/> and web applications. 
-            <br className='sm:block hidden'/> I'm a web3.0 enthusiast and learner.
+            I am a Software Engineer <br className='sm:block hidden'/> and I try to find new problems and build solutions. 
+            <br className='sm:block hidden'/> I'm curious about web3 and AI and trying to keep up with the new trends.
           </p>
         </div>
       </div>
