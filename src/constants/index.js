@@ -112,7 +112,7 @@ const experiences = [
     company_name: "Wipro",
     icon: wipro,
     iconBg: "white",
-    date: "Jun 2019 - Aug 2022",
+    date: "Jun 2019 - Jul 2022",
     points: ["Trained on python technologies."],
   },
   {
@@ -120,9 +120,9 @@ const experiences = [
     company_name: "Client: Cisco",
     icon: cisco,
     iconBg: "#383E56",
-    date: "Nov 2019 - June 2022",
+    date: "Aug 2019 - Jul 2022",
     points: [
-      "Delivered Tier 2/3 technical support for Cisco Unified Communications Manager (CUCM), specializing in Collaboration APIs used by clients across the enterprise and healthcare sectors to build call management applications.",
+      "Delivered Tier 2 technical support for Cisco Unified Communications Manager (CUCM), specializing in Collaboration APIs used by clients across the enterprise and healthcare sectors to build call management applications.",
       "Triaged and resolved API integration issues, telephony errors, and call flow anomalies in enterprise environments by reproducing issues in sandbox environments and coordinating with development teams.",
       "Utilized tools such as Wireshark to analyze network behavior (SIP signaling, RTP streams), and Postman / SOAP UI to verify REST and SOAP API functionality.",
       "Wrote custom Python scripts to automate log collection, system diagnostics, and performance checks, which streamlined support processes and reduced response times.",
